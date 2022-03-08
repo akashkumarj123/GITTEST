@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        h1::first-letter {
+            font-size: 70px;
+            color: goldenrod;
+            font-style: italic;
+        }
+        h1::before {
+            content: "This is ";
+            color: lime;
+        }
+        h1::after {
+            content: " for Website";
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading</h1>
+</body>
+</html>

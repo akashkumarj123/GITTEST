@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static{position:static;}
+        .relative{position:relative;}
+        .absolute{position:absolute;}
+        .fixed{position:fixed;}
+        .test>div{padding: 10px; border:1px solid red;margin:10px;}
+        #test:checked ~ .test{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id='test'>
+    <div class="test">
+        <div class="static">static</div>
+        <div class="relative">relative</div>
+        <div class="absolute">Absolute</div>
+        <div class="fixed">fixed</div>
+    </div>
+</body>
+</html>
